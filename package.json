@@ -1,41 +1,31 @@
 {
-    "name": "MyProject",
-    "version": "1.0.0",
-     "author": "Saral",
-    "scripts":{
-    "start":"node gulpfile.js",
-     "prebuild": "npm install",
-      "build": "gulp"
-    },
-  
-    "dependencies": {
-      "gulp": "*",
-      "gulp-ruby-sass": "*",
-      "gulp-util": "*",
-      "gulp-rename": "*",
-      "gulp-concat": "^2.6.0",
-      "gulp-concat-vendor": "0.0.4",
-      "map-stream": "*",
-      "gulp-livereload": "*",
-      "gulp-concat": "*",
-      "gulp-uglify": "*",
-      "gulp-minify-css" : "^1.2.1",
-      "gulp-notify":"2.2.0",
-      "gulp-inject": "1.5.0",
-      "run-sequence": "1.1.4",
-      "stream-series": "0.1.1",
-      "gulp-gzip": "1.2.0",
-      "gulp-clone": "1.0.0",
-      "gulp-watch": "*"
-  
-  
-    }
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+  "name": "curriculo",
+  "version": "0.3.0",
+  "description": "Meu Currículo",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felipesampaiosilva/curriculo"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
