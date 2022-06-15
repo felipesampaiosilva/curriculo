@@ -9,7 +9,7 @@ const DBPATH = './data/curriculooficial.db';
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
-app.use(express.static("./"));
+app.use(express.static(__dirname+"/"));
 
 app.use(express.json());
 
