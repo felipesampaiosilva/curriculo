@@ -2,10 +2,9 @@ const express = require('express');
 const app = express();
 
 const path = require('path')
-const hostname = '127.0.0.1';
 const port = process.env.PORT || 8080;
 const sqlite3 = require('sqlite3').verbose();
-const DBPATH = path.join(__dirname, 'curriculooficial.db');
+const DBPATH = path.join(__dirname, 'data/curriculooficial.db');
 
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -85,6 +84,6 @@ app.post('/userdelete', urlencodedParser, (req, res) => {
 
 
 /* Inicia o servidor */
-app.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+app.listen(port, () => {
+	console.log(`Server running on ${port}/`);
 });
