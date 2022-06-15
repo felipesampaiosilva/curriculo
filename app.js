@@ -5,7 +5,6 @@ const path = require('path')
 const port = process.env.PORT || 8080;
 const sqlite3 = require('sqlite3').verbose();
 const DBPATH = path.join(__dirname, 'data/curriculooficial.db');
-
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
@@ -29,7 +28,7 @@ app.get('/data', (req, res) => {
 		if (err) {
 		    throw err;
 		}
-		res.json(rows);
+		res.json(DBPATH);
 	});
 	db.close(); // Fecha o banco
 });

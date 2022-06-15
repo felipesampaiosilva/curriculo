@@ -32,6 +32,7 @@ function getdata() {
   xhttp.open("get", url, false);
   xhttp.send();
 
+  console.log(xhttp.responseText)
   let data = JSON.parse(xhttp.responseText);
 
   let html = "";
